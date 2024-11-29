@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["younger_logics_core"]
+exclude = ["test"]
+
+[project]
+name = "Younger-Logics-Core"
+description = "Captures the Logical Structure of Neural Networks, Supporting Modular Analysis and High-Level Optimization."
+version = "0.0.1alpha1"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache Software License"}
+keywords = ["Younger", "Logic", "Deep Learning", "Module"]
+authors = [{name = "Jason-Young-AI", email = "AI.Jason.Young@outlook.com"}]
+maintainers = [{name = "Jason-Young-AI", email = "AI.Jason.Young@outlook.com"}]
+classifiers=[
+    "Development Status :: 3 - Alpha",
+
+    'Intended Audience :: Developers',
+    'Intended Audience :: Education',
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering :: Artificial Intelligence',
+
+    'License :: OSI Approved :: Apache Software License',
+
+    'Operating System :: OS Independent',
+
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.11',
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+    "tqdm",
+    "click",
+    "psutil",
+    "pandas",
+    "networkx",
+    "python-semantic-release"
+]
+
+[project.optional-dependencies]
+construct = ["torch-geometric"]
+developer = [
+    "sphinx"
+]
+
+[project.urls]
+Homepage = "https://younger.yangs.ai/logics/core"
+Issues = "https://github.com/Yangs-AI/Younger-Logics-Core/issues"
+Source = "https://github.com/Yangs-AI/Younger-Logics-Core"
+Repository = "https://github.com/Yangs-AI/Younger-Logics-Core.git"
+
+[project.scripts]
+younger-logics-core = "younger_logics_core.commands.main:main"
+
+[project.entry-points."younger.logics"]
+core = "younger_logics_core.commands.main:main"
