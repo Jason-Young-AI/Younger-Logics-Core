@@ -6,7 +6,7 @@
 # Author: Jason Young (杨郑鑫).
 # E-Mail: AI.Jason.Young@outlook.com
 # Last Modified by: Jason Young (杨郑鑫)
-# Last Modified time: 2024-12-11 14:31:14
+# Last Modified time: 2024-12-24 14:22:05
 # Copyright (c) 2024 Yangs.AI
 # 
 # This source code is licensed under the Apache License 2.0 found in the
@@ -21,7 +21,7 @@ from younger_logics_core.commands.update import update
 from younger_logics_core.commands.output import output
 
 
-@click.group(name='younger-logics-ir')
+@click.group(name='younger-logics-core')
 def main():
     pass
 
