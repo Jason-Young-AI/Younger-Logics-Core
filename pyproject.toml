@@ -9,7 +9,7 @@ exclude = ["test*"]
 [project]
 name = "Younger-Logics-Core"
 description = "Captures the Logical Structure of Neural Networks, Supporting Modular Analysis and High-Level Optimization."
-version = "0.0.1alpha1"
+version = "0.0.1a1"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "Apache Software License"}
@@ -39,13 +39,15 @@ dependencies = [
     "psutil",
     "pandas",
     "networkx",
-    "python-semantic-release"
+    "younger"
 ]
 
 [project.optional-dependencies]
 construct = ["torch-geometric"]
-developer = [
-    "sphinx"
+develop = [
+    "pytest",
+    "sphinx",
+    "python-semantic-release"
 ]
 
 [project.urls]
