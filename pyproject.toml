@@ -38,12 +38,14 @@ dependencies = [
     "click",
     "psutil",
     "pandas",
-    "networkx"
+    "networkx",
+    "younger"
 ]
 
 [project.optional-dependencies]
 construct = ["torch-geometric"]
 develop = [
+    "pytest",
     "sphinx",
     "python-semantic-release"
 ]
