@@ -11,7 +11,7 @@ name = "Younger-Logics-Core"
 description = "Captures the Logical Structure of Neural Networks, Supporting Modular Analysis and High-Level Optimization."
 version = "0.0.1a1"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 license = {text = "Apache Software License"}
 keywords = ["Younger", "Logic", "Deep Learning", "Module"]
 authors = [{name = "Jason-Young-AI", email = "AI.Jason.Young@outlook.com"}]
